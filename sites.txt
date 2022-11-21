@@ -1,3 +1,3 @@
-www.google.com
-www.ephec.be
-www.ephec-ti.be
+Google;www.google.com;ping
+Ephec;www.ephec.be;ping
+Ephec-TI;www.ephec-ti.be;ping
