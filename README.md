@@ -1,0 +1,3 @@
+# pyMonitor  ![Linter](https://github.com/vvandenschrieck/pyMonitor_2022/workflows/Lint/badge.svg)
+
+pyMonitor is a tool used to monitor websites using different probes : Ping, NMap, ... 
