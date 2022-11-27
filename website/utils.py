@@ -11,7 +11,8 @@ def load_sites(filename):
         followed by ; then the DNS name of the site (no http/https), then
     """
     sites = []
-    probe_dict = {"ping": state_probes.test_status_with_ping}
+    probe_dict = {"ping": state_probes.test_status_with_ping,
+                  "nmap": state_probes.test_port_443_with_nmap}
 
     with open(filename) as file:
         for line in file:

@@ -35,4 +35,4 @@ class Website:
         return self.__name
 
     def __str__(self):
-        return f"Site {self.__name} : {self.__url} - Tests appliqués : { ' '.join([probe.__name__ for probe in self.__probes])} "
+        return f"Site {self.__name} : {self.__url} - Tests appliqués : {self.__probes}"
