@@ -1,0 +1,30 @@
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        markup: True
+        text: '[u][size=60][b][color=#00AAAA]Dashboard[/color][/b][/size][u]'
+        size: self.texture_size
+        valign: 'top'
+    BoxLayout:
+        id: site_status_box
+        orientation: 'vertical'
+    Label:
+        id: msg_label
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            id: refresh_button
+            text: 'Afficher/Rafraichir'
+            on_press: app.refresh()
+        Button:
+            text: 'Tester tout'
+            background_color: (0, 99, 71, 0.5)
+            on_press: app.test_all()
+
+<StatusTag> :
+    canvas:
+        Color :
+            rgba: self.color
+        Ellipse:
+            size: (50, 50)
+            pos: self.center_x, self.center_y

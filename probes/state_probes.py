@@ -22,10 +22,7 @@ def test_port_443_with_nmap(host):
     # Get IP from hostname
     ip = socket.gethostbyname(host)
     nm = nmap.PortScanner()
-    try:
-        nm.scan(ip, '443', timeout=1)
-    except nmap.PortScannerTimeout:
-        return False
+    nm.scan(ip, '443')
     return nm[ip].tcp(443)['state'] == "open"
 
 
