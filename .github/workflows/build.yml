@@ -35,4 +35,4 @@ jobs:
           pip install -r requirements.txt
       - name: Run PyInstaller
         run: |
-            pyinstaller --onefile main.spec
+            pyinstaller main.spec
