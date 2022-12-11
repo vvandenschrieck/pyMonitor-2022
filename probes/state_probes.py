@@ -2,6 +2,9 @@ import platform
 import subprocess
 import nmap
 import socket
+import logging
+
+logger = logging.getLogger("pymonitor")
 
 
 def test_status_with_ping(host):
@@ -14,7 +17,7 @@ def test_status_with_ping(host):
 
     # Building the command. Ex: "ping -c 1 google.com"
     command = ['ping', param, '1', host]
-
+    logger.info("Un test a été effectué avec ping sur le site " + host)
     return subprocess.run(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0
 
 
