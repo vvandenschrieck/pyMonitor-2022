@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['main.py'],
-             pathex=['/Users/vvandens/Google Drive/Boulot/Ephec/2022-2023/Q1/Dev II/Projet démo/pyMonitor_2022/'],
+             pathex=['.'],
              binaries=[],
              datas=[('data/sites.txt', 'data'),('gui/GUIView.kv', 'gui')],
              hiddenimports=[],
@@ -23,7 +23,7 @@ exe = EXE(pyz,
           a.zipfiles,
           a.datas,
           [],
-          name='main',
+          name='pyMonitor',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
