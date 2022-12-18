@@ -6,13 +6,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  pyinstaller-build:
-    runs-on: macos-latest
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Create Executable
-        uses: sayyid5416/pyinstaller@v1.2.0
-        with:
-          python_ver: 3.8
-          spec: main.spec
-          requirements: requirements.txt
-          upload_exe_with_name: PyMonitor
+    - uses: actions/checkout@v2
+
+    - name: Package Application
+      uses: JackMcKew/pyinstaller-action-linux@main
+      with:
+        path: .
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: pyMonitor
+        path: src/dist/linux
