@@ -2,6 +2,9 @@
 
 
 pyMonitor is a tool used to monitor websites using differents probes : Ping, NMap, ... 
+## Latest version 
+
+1.1.0
 
 ## Dependencies : 
 
