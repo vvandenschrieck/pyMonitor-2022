@@ -2,3 +2,4 @@ python-nmap==0.7.1
 termcolor==1.1.0
 Kivy==2.1.0
 Kivy-Garden==0.1.5
+pyinstaller==5.7.0
