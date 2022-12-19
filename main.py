@@ -1,3 +1,4 @@
+# Author : V. Van den Schrieck
 import errno
 import os
 import sys
