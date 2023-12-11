@@ -8,4 +8,4 @@ pyMonitor is a tool used to monitor websites using differents probes : Ping, NMa
 
 ## Dependencies : 
 
-In order to use pyMonitor, you must install NMap.  
+In order to use pyMonitor, you must install the NMap library.  
